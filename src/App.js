@@ -34,7 +34,7 @@ function App() {
               {coins.map((coin) => (
                 <option>
                   {coin.name} ({coin.symbol}) : ${coin.quotes.USD.price} USD{" "}
-                  {money * coin.quotes.USD.price}
+                  {money / coin.quotes.USD.price}
                   {coin.symbol}
                 </option>
               ))}
